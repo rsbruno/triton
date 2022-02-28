@@ -2,8 +2,10 @@ import styles from "./styles.module.scss";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 import { CgToggleSquareOff } from "react-icons/cg";
 import { BsViewList, BsSpeaker } from "react-icons/bs";
-import { AiOutlineSound } from "react-icons/ai";
+import { GiPreviousButton } from "react-icons/gi";
 import { SongVolumeButton } from "../../Buttons/SongVolume/Index";
+import { PlayerMusic } from "../../PlayerMusic/Index";
+import { HoverButton } from "../../Buttons/ButtonHover/Index";
 
 export function Footer() {
   return (
@@ -18,14 +20,17 @@ export function Footer() {
         <CgToggleSquareOff />
       </div>
 
-      <div className={styles.containerControls}></div>
+      <PlayerMusic />
 
       <div className={styles.containerbuttons}>
         <BsViewList />
         <BsSpeaker />
-        
         <SongVolumeButton />
       </div>
+
+      <HoverButton>
+        <GiPreviousButton />
+      </HoverButton>
     </div>
   );
 }

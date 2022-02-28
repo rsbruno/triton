@@ -1,0 +1,24 @@
+.button {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+
+  svg {
+    fill: #a7a7a7;
+    font-size: 1.3rem;
+    path {
+      transition: all ease 400ms;
+      fill: #a7a7a7;
+    }
+
+    &:hover {
+      fill: #fff;
+      path {
+        fill: #fff;
+      }
+    }
+  }
+}
