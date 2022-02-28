@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+
+  .containerHeader {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      color: #a7a7a7;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      &:hover {
+        transition: all ease 300ms;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .cards {
+    max-width: 100%;
+    overflow: hidden;
+    gap: 25px;
+    display: flex;
+  }
+}
