@@ -6,7 +6,7 @@ import { IoSearchSharp } from "react-icons/io5";
 import { VscLibrary } from "react-icons/vsc";
 import { Footer } from "../components/TemplateMain/Footer/Index";
 import styles from "../styles/Home.module.scss";
-import { ButtonBackground } from "../components/Buttons/ButtonBackground/Index";
+import { ContainerIcon } from "../components/ContainerIcon/Index";
 import { AiOutlinePlus } from "react-icons/ai";
 import { ButtonCustomLink } from "../components/Buttons/ButtonCustomLink/Index";
 
@@ -42,31 +42,17 @@ const Home: NextPage = () => {
 
           <ul>
             <ButtonCustomLink href="">
-              <ButtonBackground
-                style={{
-                  background: "#FFF",
-                  marginRight: "5px",
-                }}
-              >
+              <ContainerIcon background="#FFF">
                 <AiOutlinePlus />
-              </ButtonBackground>
+              </ContainerIcon>
               <h3>Criar Playlist</h3>
             </ButtonCustomLink>
 
-
-
             <ButtonCustomLink href="" NoAdaptativeOpacity>
-              <>
-                <ButtonBackground
-                  style={{
-                    background: "linear-gradient(135deg,#450af5,#c4efd9)",
-                    marginRight: "5px",
-                  }}
-                >
-                  <MdFavorite fill="#FFF" />
-                </ButtonBackground>
-                <h3>Músicas Curtidas</h3>
-              </>
+              <ContainerIcon background="linear-gradient(135deg,#450af5,#c4efd9)">
+                <MdFavorite fill="#FFF" />
+              </ContainerIcon>
+              <h3>Músicas Curtidas</h3>
             </ButtonCustomLink>
           </ul>
         </nav>
