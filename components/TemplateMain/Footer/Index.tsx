@@ -27,10 +27,6 @@ export function Footer() {
         <BsSpeaker />
         <SongVolumeButton />
       </div>
-
-      <HoverButton>
-        <GiPreviousButton />
-      </HoverButton>
     </div>
   );
 }

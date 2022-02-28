@@ -2,7 +2,35 @@
   width: 100%;
   height: 50px;
   background: transparent;
+  box-sizing: border-box;
+  
+  .content {
+    width: 80%;
+    margin-left: 15px;
+  }
 
   .containerButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 5px;
+  }
+
+  .statusContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    span {
+      color: #a7a7a7;
+      font-size: .8rem;
+    }
+    div {
+      width: 100%;
+      height: 3px;
+      background: #a7a7a7;
+    }
   }
 }
