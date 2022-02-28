@@ -1,8 +1,10 @@
 import styles from "./styles.module.scss";
-import { GiPreviousButton, GiNextButton } from "react-icons/gi";
-import { FaPlay } from "react-icons/fa";
+
 import { HoverButton } from "../Buttons/ButtonHover/Index";
 import { ButtonPlay } from "../Buttons/ButtonPlay/Index";
+
+import { GiPreviousButton, GiNextButton } from "react-icons/gi";
+import { FaPlay } from "react-icons/fa";
 
 export function PlayerMusic() {
   return (

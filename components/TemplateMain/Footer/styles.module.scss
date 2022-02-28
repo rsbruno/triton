@@ -10,7 +10,8 @@
     min-width: 60px;
     max-width: 60px;
     height: 60px;
-    background: red;
+
+    border: solid 1px #a7a7a7;
   }
 
   .titleSong {
@@ -36,19 +37,5 @@
   .containerbuttons {
     display: flex;
     gap: 15px;
-    svg {
-      fill: #a7a7a7;
-      font-size: 1.3rem;
-      path {
-        fill: #a7a7a7;
-      }
-
-      &:hover {
-        fill: #fff;
-        path {
-          fill: #fff;
-        }
-      }
-    }
   }
 }
