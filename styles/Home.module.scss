@@ -13,13 +13,63 @@
       margin: 0;
       padding: 15px 0 15px 25px;
       li {
-       
       }
     }
   }
   main {
     grid-area: contentmain;
     background: $primary-gray10;
+    display: flex;
+    header {
+      padding: 5px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 50px;
+      width: 100%;
+      .controlls {
+        display: flex;
+      }
+
+      .contentHeader {
+        width: 100%;
+      }
+
+      .infoHeader {
+        .badgeContainer {
+          background: #000;
+          border-radius: 999999px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 8px;
+          height: 36px;
+          padding: 2px;
+
+          .avatarUser {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #535353;
+            svg{
+              font-size: 1rem;
+            }
+          }
+          .nameUser {
+            color: #fff;
+            font-size: .85rem;
+          }
+
+          svg {
+            font-size: 1.1rem;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
   }
   footer {
     grid-area: footer;

@@ -1,14 +1,19 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { RiHome2Line } from "react-icons/ri";
-import { MdFavorite } from "react-icons/md";
-import { IoSearchSharp } from "react-icons/io5";
-import { VscLibrary } from "react-icons/vsc";
-import { Footer } from "../components/TemplateMain/Footer/Index";
 import styles from "../styles/Home.module.scss";
-import { ContainerIcon } from "../components/ContainerIcon/Index";
+
+import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
+import { RiHome2Line, RiUser3Line } from "react-icons/ri";
+import { TiArrowSortedDown } from "react-icons/ti";
+import { IoSearchSharp } from "react-icons/io5";
 import { AiOutlinePlus } from "react-icons/ai";
+import { VscLibrary } from "react-icons/vsc";
+import { MdFavorite } from "react-icons/md";
+
 import { ButtonCustomLink } from "../components/Buttons/ButtonCustomLink/Index";
+import { ButtonRounded } from "../components/Buttons/ButtonRounded/Index";
+import { ContainerIcon } from "../components/ContainerIcon/Index";
+import { Footer } from "../components/TemplateMain/Footer/Index";
 
 const Home: NextPage = () => {
   return (
@@ -57,7 +62,30 @@ const Home: NextPage = () => {
           </ul>
         </nav>
 
-        <main>conteudo aqui</main>
+        <main>
+          <header>
+            <div className={styles.controlls}>
+              <ButtonRounded>
+                <BsChevronLeft />
+              </ButtonRounded>
+              <ButtonRounded>
+                <BsChevronRight />
+              </ButtonRounded>
+            </div>
+            <div className={styles.contentHeader}></div>
+
+            <div className={styles.infoHeader}>
+              <div className={styles.badgeContainer}>
+                <div className={styles.avatarUser}>
+                  <RiUser3Line fill="#fff" />
+                </div>
+                <h4 className={styles.nameUser}>Bruno</h4>
+                <TiArrowSortedDown fill="#fff" />
+              </div>
+            </div>
+          </header>
+        </main>
+
         <footer>
           <Footer />
         </footer>
