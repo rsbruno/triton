@@ -1,0 +1,58 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0 15px;
+
+  .avatarSong {
+    min-width: 60px;
+    max-width: 60px;
+    height: 60px;
+    background: red;
+  }
+
+  .titleSong {
+    width: 500px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    strong,
+    span {
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    span {
+      font-size: 0.7rem;
+    }
+  }
+
+  .containerbuttons {
+    display: flex;
+    gap: 15px;
+    svg {
+      fill: #a7a7a7;
+      font-size: 1.3rem;
+      path {
+        fill: #a7a7a7;
+      }
+
+      &:hover {
+        fill: #fff;
+        path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+  .containerControls {
+    width: 100%;
+  }
+}
